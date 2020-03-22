@@ -165,13 +165,13 @@ module.exports = function (webpackEnv) {
               collapseWhitespace: true, // 去除换行符/空格
               removeRedundantAttributes: true, // 去除默认值标签属性
               removeScriptTypeAttributes: true, // 删除script type
-              useShortDoctype: true, // 用短的 HTML5 doctype替换doctype
-              removeEmptyAttributes: true, // 删除所有带有仅空格值的属性
+              useShortDoctype: true,
+              removeEmptyAttributes: true,
               removeStyleLinkTypeAttributes: true, // 删除link type
-              keepClosingSlash: true, // 在单例元素上保留斜线
-              minifyJS: true, // 缩小脚本元素和事件属性中的JavaScript
-              minifyCSS: true, // 缩小样式元素和样式属性中的CSS
-              minifyURLs: true // 缩小各种属性中的URL
+              keepClosingSlash: true,
+              minifyJS: true,
+              minifyCSS: true,
+              minifyURLs: true
             }
           } : {}
         )
