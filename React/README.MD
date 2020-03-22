@@ -2,21 +2,21 @@
 
 **## 创建项目并启动**
 
-\1. 首先基于 npm 在全局安装 create-react-app
+1.  首先基于 npm 在全局安装 create-react-app
 
-\- npm install -g create-react-app
+\-  npm install -g create-react-app
 
-  \2. 在指定目录中创建一个 react 项目工程
+2.  在指定目录中创建一个 react 项目工程
 
-\- create-react-app my-app
+\-  create-react-app my-app
 
-  \3. 进入到指定的项目文件，启动项目
+3.  进入到指定的项目文件，启动项目
 
-\- cd my-app
+\-  cd my-app
 
-\- npm start 或者 \$ yarn start 启动(前提是在全局安装了 yarn)
+\-  npm start 或者 \$ yarn start 启动(前提是在全局安装了 yarn)
 
-**## 脚手架生产的结构目录介绍**
+**## 脚手架生产的结构 目录介绍**
 
 \- my-app
 
@@ -26,23 +26,15 @@
 
 \- | |-- static //资源文件
 
-\- |
-
 \- |-- node_modules //项目组件文件夹：所有安装的组件都在这
-
-\- |
 
 \- |--src //源码目录
 
 \- | |--index.js //入口文件(还生成了其它的文件，但是没啥用，我们可以直接的删除掉)
 
-\- |
-
 \- |--public //静态页面目录
 
 \- | |--index.html //主页面(还生成了其它的文件，但是没啥用，我们可以直接的删除掉)
-
-\- |
 
 \- |-- .gitignore //git 提交的忽略文件，我们一般还需要再手动增加.idea(通过 webstorm 编辑工具进行开发，生成的文件)
 
@@ -86,23 +78,18 @@
 
 **### 可执行脚本注释:**
 
-\- npm run start 启动服务，自动编译项目，可以实现边开发，边自动编译刷新，看到最新开发的效果
+-  npm run start 启动服务，自动编译项目，可以实现边开发，边自动编译刷新，看到最新开发的效果
 
-\-
+-  npm run build 把项目整体进行编译，最后再 build 目录中生成项目编译后的文件
+-  我们上传服务器的就是这些文件
 
-\- npm run build 把项目整体进行编译，最后再 build 目录中生成项目编译后的文件，我们上传服务器的就是这些文件
+-  npm run test 使用 Jest 作为测试运行程序（不常用）
 
-\-
+-  npm run eject 下文具体介绍使用
 
-\- npm run test 使用 Jest 作为测试运行程序（不常用）
+-  当然以上操作也可以基于 yarn 来完成
 
-\-
-
-\- npm run eject 下文具体介绍使用
-
-\-
-
-\- 当然以上操作也可以基于 yarn 来完成
+  
 
 ```
 $yarn eject或者npm run eject 此命令执行完成不可逆转(慎重使用)
